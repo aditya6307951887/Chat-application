@@ -10,7 +10,7 @@ const socket=io();
 
 //get username and room from url
 const{username,room}=Qs.parse(location.search,{
-              ignoreQueryPrefix:true
+              ignoreQueryPrefix:true 
 });
 //join chatroom
 socket.emit('joinroom',{username,room});
